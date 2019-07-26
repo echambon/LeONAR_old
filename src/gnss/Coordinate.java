@@ -34,7 +34,7 @@ public class Coordinate {
 	/**
 	 * Getters
 	 */
-	public int getCoordinateDegree() 					{ return this.Degree; }
-	public float getCoordinateMinute() 					{ return this.Minute; }
-	public CardinalDirection getCoordinateCardinal() 	{ return this.Cardinal; }
+	public int 					getCoordinateDegree() 		{ return this.Degree; }
+	public float 				getCoordinateMinute() 		{ return this.Minute; }
+	public CardinalDirection 	getCoordinateCardinal() 	{ return this.Cardinal; }
 }
