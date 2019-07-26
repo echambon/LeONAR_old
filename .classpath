@@ -11,5 +11,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Emmanuel/eclipse-workspace/mfz-rxtx-2.2-20081207-win-x64/RXTXcomm.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX12"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
