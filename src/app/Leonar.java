@@ -1,6 +1,6 @@
 package app;
 
-import javafx.application.Application;
+/*import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -22,38 +22,48 @@ public class Leonar extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-}
+}*/
 
-/*import gnu.io.*;
-import gnss.*;
-import java.util.Enumeration;
+//import gnu.io.*;
+//import gnss.*;
+import com.*;
 
-public class leonar {
+import java.io.IOException;
+//import java.util.Enumeration;
+
+public class Leonar {
 
 	public static void main(String[] args) {
-		// debug Position
-		Position test = new Position();
-		//Position test2 = new Position(2.0f, CardinalDirection.South, 4.5f, CardinalDirection.West);
-		
-		// debug COM
 		System.out.println("Program Started!!!");
 		
-		CommPortIdentifier serialPortId;
+		// debug Position
+		//Position test = new Position();
+		//Position test2 = new Position(2.0f, CardinalDirection.South, 4.5f, CardinalDirection.West);
 		
+		// debug com
+		
+		/*CommPortIdentifier serialPortId;
 		Enumeration enumComm;
 		
 		enumComm = CommPortIdentifier.getPortIdentifiers();
 		
-		while(enumComm.hasMoreElements())
-		{
+		while(enumComm.hasMoreElements()) {
 			serialPortId = (CommPortIdentifier)enumComm.nextElement();
-			if(serialPortId.getPortType() == CommPortIdentifier.PORT_SERIAL)
-			{
+			if(serialPortId.getPortType() == CommPortIdentifier.PORT_SERIAL) {
 				System.out.println(serialPortId.getName());
 			}
+		}*/
+		
+		// debug Communicator
+		try {
+			Communicator test = new Communicator("COM3",9600);
+			test.closeUSB();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		System.out.println("Program Finished Sucessfully");
 	}
 
-}*/
+}
